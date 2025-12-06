@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITU R&D - Tasks Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas للخلفية المتحركة -->
+    <canvas id="pcbCanvas" class="pcb-background"></canvas>
+
+    <!-- الهيدر / الشريط العلوي -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="R&D LOGO.png" alt="Logo" onerror="this.style.display='none'">
+                     <span style="display:none;">R</span>
+                </div>
+                <h1 class="brand-name">AITU <span>R&D</span></h1>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-page="home">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#" class="nav-item" data-page="about">
+                    <span class="nav-icon">ℹ️</span>
+                    <span class="nav-text">About us</span>
+                </a>
+                <a href="#" class="nav-item" data-page="projects" style="display: none !important;" >
+                    <span class="nav-icon">📋</span>
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a href="#" class="nav-item" data-page="team" style="display: none !important;" >
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">Team</span>
+                </a>
+            </nav>
+
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- الصفحات -->
+    <main class="main-content">
+        <!-- صفحة الهوم / التاسكات -->
+        <section id="home-page" class="page active">
+            <div class="page-content">
+                <div class="hero-section">
+                    <h1 class="hero-title">AITU R&D</h1>
+                    <p class="hero-subtitle">Select a subject to view and submit your tasks</p>
+                </div>
+
+                <div class="subjects-grid" id="subjectsGrid"></div>
+
+                <!-- صفحة المادة الفردية -->
+                <div id="subject-detail" class="subject-detail hidden">
+                    <button class="back-btn" onclick="goBackToSubjects()">← Back to Subjects</button>
+                    <div class="subject-header" id="subjectHeader"></div>
+                    <div class="tasks-grid" id="tasksGrid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة About Us -->
+        <section id="about-page" class="page">
+            <div class="page-content">
+                <h1 class="page-title">About Us</h1>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>AITU R&D – Empowering Student Innovators At AITU R&D, we are committed to giving students the tools and support they need to explore, experiment, 
+                           and excel in research and development. Our platform offers seamless task management, progress tracking, and multi-subject guidance, turning learning into an 
+                           engaging and hands-on experience.</p>
+                        <p>Innovation Through Collaboration We foster a culture of collaboration over competition, where every idea is valued, every perspective is heard, and 
+                           students are encouraged to push the boundaries of their potential. With the guidance of our experienced mentors and innovators, students gain the skills 
+                           and confidence to tackle challenges creatively and effectively.</p>
+                        <p>Real Projects, Real Impact Students at AITU R&D work on projects that matter, transforming concepts into tangible solutions. Every project is an opportunity 
+                           to learn, grow, and make a difference, giving students practical experience that prepares them for real-world challenges beyond the classroom.</p>
+                        <p>Join the Future of Innovation Whether you are passionate about engineering, technology, or cutting-edge research, AITU R&D is the place to transform 
+                           ambition into achievement. Join our community to explore exciting opportunities, develop your skills, and contribute to projects that shape the innovators of tomorrow.</p>
+                        <p><strong>Contact:</strong> aitu.rd.2026@gmail.com | <strong>Phone:</strong> +20 107 005 3663</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة Projects -->
+        <section id="projects-page" class="page" style="display: none !important;"> 
+            <div class="page-content">
+                <h1 class="page-title">Our Projects</h1>
+                <div class="projects-container" id="projectsContainer"></div>
+                <div id="project-detail" class="project-detail hidden"></div>
+            </div>
+        </section>
+
+        <!-- صفحة Team -->
+        <section id="team-page" class="page" style="display: none !important;">
+            <div class="page-content">
+                <h1 class="page-title">Meet Our Team</h1>
+                <div class="team-grid" id="teamGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal للتاسك -->
+    <div id="taskModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Task Details</h2>
+            <p id="modalDescription"></p>
+            <div class="modal-buttons">
+                <a id="driveLinkBtn" href="#" target="_blank" class="btn btn-drive">📁 Open Files</a>
+                <a id="formLinkBtn" href="#" target="_blank" class="btn btn-submit">✅ Submit Solution</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
