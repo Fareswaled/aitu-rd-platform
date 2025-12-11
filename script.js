@@ -1,202 +1,188 @@
 // ===== بيانات المواد والتاسكات =====
+// ===== بيانات المواد والتاسكات (نسخة العميل الآمنة) =====
 const globalFormLink = "https://forms.gle/azG5H2vJ1YS4iVG56";
 const subjects = [
-{
+    {
         id: 1,
         name: "Circuit",
         icon: '<img src="Circuits.png" alt="Subject Icon" class="subject-icon-img">',
         description: "Electronic circuit design and analysis",
-        tasks: 
-    [
-        { 
-            id: 1, title: "Task 1: Fundamentals of Ohm’s Law ", 
-            description: "Explore Ohm’s Law and learn how resistor and capacitor networks behave in series and parallel connections.",
-            driveLink: "https://drive.google.com/file/d/1v3YbAxziGV25FRSN3txIzzY30_rjVGr8/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2025-12-04T09:00:00" 
-        },
-        { 
-            id: 2, title: "Task 2: Simulation & Practical Circuit Assembly Basics", 
-            description: "Learn how to build and simulate circuits on a breadboard using Tinkercad, and study essential components such as diodes and capacitors.", 
-            driveLink: "https://drive.google.com/file/d/1GI0WywVRBuRrv4g_MupNc1LGmxu_KfFC/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2025-12-11T09:00:00" 
-        },
-        { 
-            id: 3, title: "Task 3: Transistors, 555 Timer, and PWM Control Circuits", 
-            description: "Understand the role of transistors in switching and amplification, get introduced to the 555 timer IC, and explore H-Bridge and PWM control circuits.", 
-            driveLink: "https://drive.google.com/file/d/19a2Wha6hbHk2a3tvP5-pR3KXqh9hg1ci/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-01-29T09:00:00" 
-        },
-        { 
-            id: 4, title: "Task 4: Advanced PWM Applications & Creative 555 Timer Uses", 
-            description: "Dive deeper into PWM control techniques and explore practical and innovative applications of the 555 timer in electronic circuits.", 
-            driveLink: "https://drive.google.com/file/d/1jRRWJ6n9MgZ25ZRp6-RbAq1QHs2oXTmH/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-06T09:00:00" 
-        }
-    ]
-},
-{
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Fundamentals of Ohm’s Law", 
+                description: "Explore Ohm’s Law and learn how resistor and capacitor networks behave.", 
+                formLink: globalFormLink, 
+                serverID: "circuit-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: Simulation & Practical Circuit Assembly", 
+                description: "Learn how to build and simulate circuits on a breadboard.", 
+                formLink: globalFormLink, 
+                serverID: "circuit-t2" 
+            },
+            { 
+                id: 3, 
+                title: "Task 3: Transistors, 555 Timer, and PWM", 
+                description: "Understand the role of transistors in switching.", 
+                formLink: globalFormLink, 
+                serverID: "circuit-t3" 
+            },
+            { 
+                id: 4, 
+                title: "Task 4: Advanced PWM Applications", 
+                description: "Dive deeper into PWM control techniques.", 
+                formLink: globalFormLink, 
+                serverID: "circuit-t4" 
+            }
+        ]
+    },
+    {
         id: 2,
         name: "Python",
         icon: '<img src="Python.png" alt="Subject Icon" class="subject-icon-img">',
         description: "Python programming for automation",
-        tasks: 
-    [
-        { 
-            id: 1, title: "Task 1: Fundamentals of Logic, Math Operations & Basic Python Processing", 
-            description: "Practice essential Python skills through logic-based problems covering variable manipulation, date handling, list operations, geometry, and mathematical computation without using conditional statements.",
-            driveLink: "https://drive.google.com/file/d/1wmjAQGy_dbkm0sfzMEvyRbcE7plJkCsZ/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2025-12-09T09:00:00" // الثلاثاء 9 ديسمبر
-        },
-        { 
-            id: 2, title: "Task 2: Loops, Patterns, and Manual Binary Conversion", 
-            description: "ULearn how to use loops to generate patterns, convert decimal numbers to binary manually, and analyze sentences by counting letters and digits without built-in functions.", 
-            driveLink: "https://drive.google.com/file/d/160qOySdST0wyNTgBDah63MHYNboTLJko/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-01-31T09:00:00" // السبت 31 يناير
-        },
-        { 
-            id: 3, title: "Task 3: Bitwise Logic & String Processing Essentials", 
-            description: "Work with string slicing, parsing techniques, and use bitwise operators to determine number properties while maintaining clean, well-commented code.", 
-            driveLink: "https://drive.google.com/file/d/1nAog3v-HSPdh48AUUCHOT6JCQOuUCU4y/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-08T09:00:00" // الاحد 8 فبراير 
-        },
-        { 
-            id: 4, title: "Task 4: Object-Oriented Programming & NumPy Operations", 
-            description: "Explore OOP in Python by implementing real-world employee models, then perform matrix operations, reshaping techniques, and array manipulation using NumPy.", 
-            driveLink: "https://drive.google.com/file/d/1AAccMfRdS8W_ZBlvQFyMHRFm02kJ-OdK/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-15T09:00:00" // الاحد 15 فبراير
-        }
-    ]
-},
-{
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Fundamentals of Logic", 
+                description: "Practice essential Python skills through logic-based problems.", 
+                formLink: globalFormLink, 
+                serverID: "python-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: Loops, Patterns, and Manual Binary", 
+                description: "Learn how to use loops to generate patterns.", 
+                formLink: globalFormLink, 
+                serverID: "python-t2" 
+            },
+            { 
+                id: 3, 
+                title: "Task 3: Bitwise Logic & String Processing", 
+                description: "Work with string slicing and parsing techniques.", 
+                formLink: globalFormLink, 
+                serverID: "python-t3" 
+            },
+            { 
+                id: 4, 
+                title: "Task 4: OOP & NumPy Operations", 
+                description: "Explore OOP in Python by implementing employee models.", 
+                formLink: globalFormLink, 
+                serverID: "python-t4" 
+            }
+        ]
+    },
+    {
         id: 3,
         name: "Devices",
         icon: '<img src="Devices.png" alt="Subject Icon" class="subject-icon-img">',
         description: "IoT and embedded devices",
-       tasks: 
-    [
-            
-        { 
-            id: 1, title: "Task 1: Introduction to Electrical Measurement Tools & Power Sources", 
-            description: "Learn the fundamentals of multimeters, battery technologies, and power supplies through selected videos that explain their construction, types, and practical usage.",
-            driveLink: "https://drive.google.com/file/d/1vudEm-D1oUQPUAob1uUiubhwAM7A3T4b/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2025-12-04T09:00:00" // تاريخ قديم (مفتوح) 
-        },
-            
-        { 
-            id: 2, title: "Task 2: Soldering, Connectors, and Basic Lab Tools", 
-            description: "Understand essential hardware skills including soldering techniques, RJ45 wiring, connectors, and basic oscilloscope usage through guided video demonstrations.", 
-            driveLink: "https://drive.google.com/file/d/17aQ5tHPGbrQwiC3giLOL1CuTYhaJIAPl/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-04T09:00:00" // الاربعاء 4 فبراير 
-        }
-        
-    ]
-},
-{
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Electrical Measurement Tools", 
+                description: "Learn the fundamentals of multimeters and power supplies.", 
+                formLink: globalFormLink, 
+                serverID: "devices-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: Soldering and Basic Lab Tools", 
+                description: "Understand essential hardware skills including soldering.", 
+                formLink: globalFormLink, 
+                serverID: "devices-t2" 
+            }
+        ]
+    },
+    {
         id: 4,
         name: "C Programming",
         icon: '<img src="C programming.png" alt="Subject Icon" class="subject-icon-img">',
         description: "C language for embedded systems",
-        tasks: 
-    [
-            
-        { 
-            id: 1, title: "Task 1: Core Data Types, Bitwise Logic, and Control Structures", 
-            description: "Master the fundamentals of C data representation, explore bitwise manipulation techniques, and implement robust control flow using loops and switch statements to solve algorithmic problems.",
-            driveLink: "https://drive.google.com/file/d/1gBvKpocecTO8NhLkl1nadSdR1wbW3L24/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2025-12-11T09:00:00" // الخميس 11 ديسمبر 
-        },
-        { 
-            id: 2, title: "Task 2: Memory Manipulation, Array Algorithms, and String Processing", 
-            description: "Delve into direct memory access using pointers, implement sorting and matrix algorithms on 1D/2D arrays, and develop low-level string manipulation functions without standard library dependencies.", 
-            driveLink: "https://drive.google.com/file/d/10oCjZYyXaYGKVX91zPRGvNQFNBe4Zujg/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-01-26T09:00:00" // الاثنين 26 يناير 
-        },
-            
-        { 
-            id: 3, title: "Task 3: User-Defined Data Structures, Unions, and Preprocessor Directives", 
-            description: "Engineer complex data models using Structures and Enums, optimize memory usage with Unions and padding control, and utilize preprocessor directives for efficient conditional compilation and macro definitions.", 
-            driveLink: "https://drive.google.com/file/d/1LuEUpH89w0qIikZ2AIl5oGoOHQQg74w2/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-03T09:00:00" // الثلاثاء 3 فبراير 
-        }
-    ]
-},
-{
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Core Data Types", 
+                description: "Master the fundamentals of C data representation.", 
+                formLink: globalFormLink, 
+                serverID: "c-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: Memory Manipulation", 
+                description: "Delve into direct memory access using pointers.", 
+                formLink: globalFormLink, 
+                serverID: "c-t2" 
+            },
+            { 
+                id: 3, 
+                title: "Task 3: User-Defined Data Structures", 
+                description: "Engineer complex data models using Structures.", 
+                formLink: globalFormLink, 
+                serverID: "c-t3" 
+            }
+        ]
+    },
+    {
         id: 5,
         name: "Arduino",
         icon: '<img src="Arduino.png" alt="Subject Icon" class="subject-icon-img">',
         description: "Arduino microcontroller programming",
-        tasks: 
-    [
-            
-        { 
-            id: 1, title: "Task 1: Arduino Platform Fundamentals and Initial Project Setup", 
-            description: "Gain a comprehensive overview of the Arduino board architecture, components, and advantages. Set up your hardware and software environment, and execute your first hands-on project using basic Arduino functions via simulation (Tinkercad).",
-            driveLink: "https://drive.google.com/file/d/1dQRDEccbbnq9t40cp6RcPArpUUIElQhc/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2026-01-26T09:00:00" // الاثنين 26 يناير
-        },
-        { 
-            id: 2, title: "Task 2: Sensor Interfacing, Analog Signals, and Serial Communication", 
-            description: "Familiarize yourself with various sensor types, understand the concept and applications of analog signals, and master serial communication protocols to display real-time sensor data on an LCD or 7-Segment display.", 
-            driveLink: "https://drive.google.com/file/d/148myzQP0jcmoqcbsMhr5U-HctHnKIdDx/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-02T09:00:00" // الاثنين 2 فبراير
-        },
-        { 
-            id: 3, title: "Task 3: Actuators and Input Device Integration", 
-            description: "Explore the operation of DC motors and their associated motor drivers, control the precise movement of servo motors, and learn how to interface the Arduino with external user input devices like a keypad.", 
-            driveLink: "https://drive.google.com/file/d/1yCkyMd1uCUdgCd4ZG8mo36qgURvdDQM-/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-09T09:00:00" // الاثنين 9 فبراير
-        },
-        { 
-            id: 4, title: "Task 4: Advanced Storage, Display Management, and Wireless Control", 
-            description: "Introduce internal EEPROM for non-volatile data storage, implement multi-tasking on LCD displays for enhanced user interface, and establish control over the Arduino using an Infrared (IR) remote control.", 
-            driveLink: "https://drive.google.com/file/d/1ILq8aOzmB_YW3PzMIAOhRDbzJUYC0b7Y/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-16T09:00:00" // الاثنين 16 فبراير
-        }
-    ]
-},
-{
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Arduino Platform Fundamentals", 
+                description: "Gain a comprehensive overview of the Arduino board.", 
+                formLink: globalFormLink, 
+                serverID: "arduino-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: Sensor Interfacing", 
+                description: "Familiarize yourself with various sensor types.", 
+                formLink: globalFormLink, 
+                serverID: "arduino-t2" 
+            },
+            { 
+                id: 3, 
+                title: "Task 3: Actuators and Input Devices", 
+                description: "Explore the operation of DC motors and servo motors.", 
+                formLink: globalFormLink, 
+                serverID: "arduino-t3" 
+            },
+            { 
+                id: 4, 
+                title: "Task 4: Advanced Storage & Control", 
+                description: "Introduce internal EEPROM and IR control.", 
+                formLink: globalFormLink, 
+                serverID: "arduino-t4" 
+            }
+        ]
+    },
+    {
         id: 6,
         name: "PCB Design",
         icon: '<img src="PCB.png" alt="Subject Icon" class="subject-icon-img">',
         description: "PCB layout and design",
-        tasks: 
-    [
-            
-        {
-            id: 1, title: "Task 1: Schematic Capture and Component Footprint Assignment", 
-            description: "Design and capture the detailed schematic for a functional 8-LED Chaser Circuit (using 555 Timer and CD4017 ICs). The task includes component selection and accurately assigning PCB footprints using professional design software.",
-            driveLink: "https://drive.google.com/file/d/1ucXAfUJjp1RL06pPjxC9nlY82YkANNxy/view?usp=drive_link",
-            formLink: globalFormLink,
-            releaseDate: "2026-01-30T09:00:00" // الجمعة 30 يناير 
-        },
-        { id: 2, title: "Task 2: PCB Layout, Routing, and Mechanical Design", 
-            description: "Transition from the schematic to the physical layout. Focus on optimal component placement, define appropriate track widths (1.0 mm) and spacing (0.6 mm) for routing, and finalize the mechanical design including mounting holes.", 
-            driveLink: "https://drive.google.com/file/d/13FUElD2cAFbNhtbWpDOxdG0xuq0h1Iaj/view?usp=drive_link", 
-            formLink: globalFormLink,
-            releaseDate: "2026-02-09T09:00:00" // الاثنين 9 فبراير 
-        }
-        
-    ]
-    
-}
-
+        tasks: [
+            { 
+                id: 1, 
+                title: "Task 1: Schematic Capture", 
+                description: "Design and capture the detailed schematic.", 
+                formLink: globalFormLink, 
+                serverID: "pcb-t1" 
+            },
+            { 
+                id: 2, 
+                title: "Task 2: PCB Layout", 
+                description: "Transition from the schematic to the physical layout.", 
+                formLink: globalFormLink, 
+                serverID: "pcb-t2" 
+            }
+        ]
+    }
 ];
 
 // ===== بيانات المشاريع =====
@@ -522,18 +508,18 @@ function showSubjectDetail(subject) {
     subject.tasks.forEach(task => {
         const card = document.createElement('div');
         card.className = 'task-card';
-        
-        // هنا الزرار اتغير وبقى ينده على دالة الفحص
+
+        // استبدال زرار الفتح بالدالة الآمنة
         card.innerHTML = `
             <div class="task-number">${task.id}</div>
             <h3 class="task-title">${task.title}</h3>
             <p class="task-description">${task.description}</p>
             <div class="task-buttons">
-                <button onclick="checkTaskAvailability('${task.driveLink}', '${task.releaseDate}')" class="btn btn-drive">📁 Open Files</button>
+                <button onclick="requestTaskAccess('${task.serverID}')" class="btn btn-drive">📁 Open Files</button>
                 <a href="${task.formLink}" target="_blank" class="btn btn-submit">✅ Submit</a>
             </div>
         `;
-        
+
         tasksGrid.appendChild(card);
     });
 }
@@ -701,26 +687,39 @@ window.addEventListener('load', () => {
         document.querySelector('[data-page="home"]').click();
     });
 });
-// ===== دالة التحقق من موعد التاسك =====
-function checkTaskAvailability(driveLink, dateStr) {
-    const now = new Date(); // الوقت الحالي
-    const releaseDate = new Date(dateStr); // وقت فتح التاسك
+// ===== دالة الاتصال بالسيرفر (الآمنة) =====
+async function requestTaskAccess(serverID) {
+    // تغيير شكل الزرار للإشارة للتحميل
+    const btn = event.target;
+    const originalText = btn.innerText;
+    btn.innerText = "⏳ Checking...";
+    btn.disabled = true;
 
-    if (now >= releaseDate) {
-        // لو الوقت الحالي عدى وقت الفتح، افتح اللينك
-        window.open(driveLink, '_blank');
-    } else {
-        // لو لسه، طلع رسالة
-        const options = { 
-            weekday: 'long', 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric', 
-            hour: 'numeric', 
-            minute: 'numeric' 
-        };
-        const dateFormatted = releaseDate.toLocaleDateString('ar-EG', options);
-        
-        alert(`🚫 عذراً، هذا التاسك مغلق حالياً!\n\n📅 سيتم فتح التاسك يوم:\n${dateFormatted}\n\nيرجى الالتزام بالجدول الزمني.\n\nمع تحياتي، \nأخوكم" Fares Soliman "😉`);
+    try {
+        // الاتصال بملف السيرفر
+        const response = await fetch(`/.netlify/functions/check-task?id=${serverID}`);
+        const data = await response.json();
+
+        if (data.allowed) {
+            // مسموح: فتح الرابط
+            window.open(data.url, '_blank');
+        } else {
+            // غير مسموح: عرض الرسالة بالتنسيق المطلوب
+            const dateObj = new Date(data.date);
+            const options = { 
+                weekday: 'long', year: 'numeric', month: 'long', 
+                day: 'numeric', hour: 'numeric', minute: 'numeric' 
+            };
+            const dateFormatted = dateObj.toLocaleDateString('ar-EG', options);
+
+            alert(`🚫 عذراً، هذا التاسك مغلق حالياً!\n\n📅 سيتم فتح التاسك يوم:\n${dateFormatted}\n\nيرجى الالتزام بالجدول الزمني.\n\nمع تحياتي، \nأخوكم" Fares Soliman "😉`);
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("حدث خطأ في الاتصال، يرجى المحاولة لاحقاً.");
+    } finally {
+        // إعادة الزرار لشكله الطبيعي
+        btn.innerText = originalText;
+        btn.disabled = false;
     }
 }
